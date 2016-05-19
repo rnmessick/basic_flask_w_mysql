@@ -13,8 +13,9 @@
     <div class="ice-cream-list">
       <h1>Ice Cream List</h1>
       <ul>
-        <li>Mint Chocolate Chip</li>
-        <li>Rocky Road</li>
+        {% for item in icecreams %}
+          <li>{{item['name']}}</li>
+        {% endfor %}
       </ul>
     </div>
   </body>
